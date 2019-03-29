@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{F828E1F2-DE2E-E84F-26DA-B6325320F266}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_5_0_1;UNITY_5_0;UNITY_5;ENABLE_LICENSE_RENAME;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_NEW_HIERARCHY;ENABLE_PHYSICS;ENABLE_PHYSICS_PHYSX3;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_AUDIOMIXER_SUSPEND;ENABLE_NONPRO;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_MONO;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;CROSS_PLATFORM_INPUT</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Scripts\Asteroids\AsteroidCollision.cs" />
+     <Compile Include="Assets\Scripts\Asteroids\MoveAsteroid.cs" />
+     <Compile Include="Assets\Scripts\Asteroids\RandomAsteroid.cs" />
+     <Compile Include="Assets\Scripts\Audio\AdjustMusicVol.cs" />
+     <Compile Include="Assets\Scripts\Audio\AdjustSFXVol.cs" />
+     <Compile Include="Assets\Scripts\Audio\PlaySound.cs" />
+     <Compile Include="Assets\Scripts\Boss\BossCollide.cs" />
+     <Compile Include="Assets\Scripts\Boss\BossHealth.cs" />
+     <Compile Include="Assets\Scripts\Boss\BossMove.cs" />
+     <Compile Include="Assets\Scripts\Boss\SpawnBoss.cs" />
+     <Compile Include="Assets\Scripts\Enemy\DestroyExplosion.cs" />
+     <Compile Include="Assets\Scripts\Enemy\EnemyCollision.cs" />
+     <Compile Include="Assets\Scripts\Enemy\EnemyDoubleShot.cs" />
+     <Compile Include="Assets\Scripts\Enemy\EnemyFire.cs" />
+     <Compile Include="Assets\Scripts\Enemy\MoveEnemy.cs" />
+     <Compile Include="Assets\Scripts\Enemy\RandomEnemies.cs" />
+     <Compile Include="Assets\Scripts\GameData\BackOption.cs" />
+     <Compile Include="Assets\Scripts\GameData\DataManager.cs" />
+     <Compile Include="Assets\Scripts\GameData\DestroyAllObjects.cs" />
+     <Compile Include="Assets\Scripts\GameData\DifficultyManager.cs" />
+     <Compile Include="Assets\Scripts\GameData\GameControl.cs" />
+     <Compile Include="Assets\Scripts\GameData\GameStatus.cs" />
+     <Compile Include="Assets\Scripts\GameData\HighScoreManager.cs" />
+     <Compile Include="Assets\Scripts\GameData\KeepLives.cs" />
+     <Compile Include="Assets\Scripts\GameData\KeepWave.cs" />
+     <Compile Include="Assets\Scripts\GameData\LoadSettings.cs" />
+     <Compile Include="Assets\Scripts\GameData\PickShipManager.cs" />
+     <Compile Include="Assets\Scripts\PowerUps\MovePowerUp.cs" />
+     <Compile Include="Assets\Scripts\PowerUps\PowerUpCollide.cs" />
+     <Compile Include="Assets\Scripts\PowerUps\RandomPowerUp.cs" />
+     <Compile Include="Assets\Scripts\Shield\MoveShield.cs" />
+     <Compile Include="Assets\Scripts\Shield\ShieldCollide.cs" />
+     <Compile Include="Assets\Scripts\Shield\ShipShield.cs" />
+     <Compile Include="Assets\Scripts\Ship\ShipCollide.cs" />
+     <Compile Include="Assets\Scripts\Ship\ShipDoubleShot.cs" />
+     <Compile Include="Assets\Scripts\Ship\ShipFire.cs" />
+     <Compile Include="Assets\Scripts\Ship\ShipLongShot.cs" />
+     <Compile Include="Assets\Scripts\Ship\ShipMove.cs" />
+     <Compile Include="Assets\Scripts\Ship\SpawnShip.cs" />
+     <Compile Include="Assets\Scripts\Shot\MoveShot.cs" />
+     <Compile Include="Assets\Scripts\Shot\ShotCollide.cs" />
+     <Compile Include="Assets\Scripts\ToggleNewShipCanvas.cs" />
+     <Compile Include="Assets\Scripts\UI\Boarders.cs" />
+     <Compile Include="Assets\Scripts\UI\Donate.cs" />
+     <Compile Include="Assets\Scripts\UI\KeepScore.cs" />
+     <Compile Include="Assets\Scripts\UI\LoadScene.cs" />
+     <Compile Include="Assets\Scripts\UI\PostHighScores.cs" />
+     <Compile Include="Assets\Scripts\UI\PowerupScoreText.cs" />
+     <Compile Include="Assets\Scripts\UI\QuitGame.cs" />
+     <Compile Include="Assets\Scripts\UI\RestartGame.cs" />
+     <Compile Include="Assets\Scripts\UI\SoundPercent.cs" />
+     <Compile Include="Assets\Scripts\UI\StarsMove.cs" />
+     <Compile Include="Assets\Scripts\UI\ToggleGameOverCanvas.cs" />
+     <Compile Include="Assets\Scripts\UI\ToggleHighScoreCanvas.cs" />
+     <Compile Include="Assets\Scripts\UI\TogglePause.cs" />
+     <Compile Include="Assets\Scripts\UI\TogglePauseCanvas.cs" />
+     <Compile Include="Assets\Scripts\UI\ToggleSettingsCanvas.cs" />
+     <Compile Include="Assets\Scripts\UI\ToggleYNCanvas.cs" />
+     <Compile Include="Assets\SimpleParticlePack\Scripts\ParticleTester.cs" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iossupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{B3F8ABD7-0D49-6ECB-DA05-4629DCC9FC09}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 5626f1b521b0be849b9d13cbc176cbcb
+timeCreated: 1425968252
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - Ships_Transform: {instanceID: 0}
+  - Shot_Object: {fileID: 162930, guid: 49f3a14758c41e94290b6eed56137e4f, type: 2}
+  - Shoot_Sound: {fileID: 8300000, guid: bf75b984df8a84987bcf3a8bf6e2862d, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
